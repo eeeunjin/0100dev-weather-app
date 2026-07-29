@@ -41,9 +41,9 @@ export default function RootLayout({
       lang="ko"
       className={`${elevenStreetGothic.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-muted/40">
+      <body className="min-h-full overflow-x-auto bg-muted/40">
         <FavoritesHydrator />
-        <div className="mx-auto flex min-h-full w-full max-w-[393px] flex-col bg-background shadow-xl">
+        <div className="mx-auto flex min-h-full w-[393px] shrink-0 flex-col bg-background shadow-xl">
           <Header />
           {children}
         </div>
